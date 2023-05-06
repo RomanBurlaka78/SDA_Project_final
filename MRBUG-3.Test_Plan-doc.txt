@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#MRBUG-3] Test Plan for MrBuggy7 &quot;&#39;Change request pricing estimation&#39;</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://romanburlaka777.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [MRBUG-3]&nbsp;<a href="https://romanburlaka777.atlassian.net/browse/MRBUG-3">Test Plan for MrBuggy7 &quot;&#39;Change request pricing estimation&#39;</a>
+            <span class="subText">
+               Created: 06/May/23                   &nbsp;Updated: 06/May/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">In Progress</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://romanburlaka777.atlassian.net/secure/BrowseProject.jspa?id=10000">MrBuggy7</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Test Plan
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:baea3361-50c4-4322-aee4-878edec557bb"
+                id="word_reporter_712020:baea3361-50c4-4322-aee4-878edec557bb"
+                href="https://romanburlaka777.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Abaea3361-50c4-4322-aee4-878edec557bb">
+                    Roman
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Unassigned
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10002-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10002-value" class="value" bgcolor="#ffffff" width="80%">      0|i0000f:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10002-value" class="value" bgcolor="#ffffff" width="80%">MRBUG Sprint 1</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <ol>
+	<li><b>Introduction .</b> This document contains the change request test plan for Mr Buggy 7.0, entitled 'Change request pricing estimation'. This application is responsible for effective management of supplier change requests. The change request, which is the subject of the plan, concerns changes in the functionality of the Mr Buggy 7.0 application. The end product will be the Mr Buggy 7.1 app. The purpose of the document is to determine the quality of the application, through tests that are designed to find as many defects as possible. The greatest emphasis will be placed on critical problems. The tests will be based on the provided MrBuggy-Change-Reqest-1-v1.pdf documentation.</li>
+	<li><b>Scope of tests .</b> Types of tests performed:  UI testing and API testing. Test scope * Price estimation - presented in euro - for each CR * Administrator role - able to access dictionary: - able to modify values in dictionary  - add new suppliers - add costs - set up a default value for suppliers - if not present in dictionary * No other role have rights listed above in point 2. * Verify if price is calculated next to MD effort ONLY AFTER "Priced" status.  * Verify if price include currency symbol * Verify if supplier cost is updated in Administration dictionary * Verify automatically re-calculation for all CRs of given Supplier * Check if confirmation notification is displayed together with point above * Verify if other suppliers does not have access to estimated work load and price</li>
+	<li><b>Test Subjects</b>  Elements under test: - desktop application MrBuggy2019 - REST API</li>
+	<li><b>Pass/fail criteria</b> . Criteria A. Passing/failing tests For every use case there will be test cases prepared. For finishing tests 80% of test cases must pass.</li>
+	<li><b>Input/output criteria Entry criteria</b>. 5.1. Testing start conditions: - Application is functional - Use cases are prepared - Test data is agreed - Test cases are written.   5.2 Testing end conditions: - 100% Test cases were executed - all critical and blocking errors are fixed or - deadline has passed</li>
+	<li><b>List of functionality requirements</b>. The list of current features is described in file "MrBuggy-Functional-Specification-v1.pdf" located in "Docs" project directory. Changes are described in "MrBuggy-Change-Reqest-1-b1.pdf".</li>
+	<li><b>Test environment.</b>  Local machine with windows 7 (or higher) with .NET Framework installed.</li>
+	<li><b>Test schedule</b> Tested application should be handed over to client in July 2023 search engine works stably</li>
+	<li><b>Test report .</b>  Test products:  - Test plan - Execution test report - Overall testing report - Found bug list - Fixed bug list</li>
+	<li><b>Testing techniques and tools</b> .  .Test cases will be prepared and reviewed before testing activities starts. For API testing there will be test suite prepared in Postman. Used test case design techniques: - equivalent class division - edge values analyze - testing based on use cases</li>
+	<li><b>Incident management, errors.</b>  In the test process, each detected error should be properly reported to the Jira system . Defects should be reported in TestingCupReport.exe application and contains title, description (with steps) and category. Tests execution can be stopped only when there is critical issue with application that doesn't allow testing anymore. In that case issue should be raised and asap to the development team.</li>
+	<li><b>Roles and responsibilities .</b>    1. QA Lead will be responsible for preparing test reports and reporting weekly to client the progress. 2. Tester(s) will be responsible for preparing test cases and executing them.</li>
+</ol>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+Generated at Sat May 06 17:50:00 UTC 2023 by Roman using Jira 1001.0.0-SNAPSHOT#100225-sha1:7f918b693b825208a7cd567c3a1bf9c31a2781e9.
+
+</body>
+</html>
