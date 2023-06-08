@@ -1,6 +1,13 @@
 # SDA_Project_final
 ## Final Project course of SDA
 
+![Header](SDA_Project.png)
+## Hi, I’m Roman Burlaka - Software Engineer
+### I represent you my testing project-  application MRBuggy7
+
+##
+##
+
 ### Skills
 ![JIRA](https://img.shields.io/badge/-JIRA-0e098c?style=for-the-badge&logo=Jira)
 ![Test Rail](https://img.shields.io/badge/-TestRail-358c09?style=for-the-badge&logo=TestRail)
