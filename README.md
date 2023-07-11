@@ -14,7 +14,8 @@
 #### - test plan (https://docs.google.com/spreadsheets/d/1gHLpGdckxEEoNOkktPC62YFnY14RTzOetkHMWo-2M7A/edit?usp=sharing)
 #### - testcases in TestRail
 #### - list of testcases in google sheets (https://docs.google.com/spreadsheets/d/107qkuqqB4tE09mclHUjWKc572MCsWVWx9CjnkjlSGY4/edit?usp=sharing)
-#### - list of bugs in google sheets()
+#### - card of exploration testing (https://docs.google.com/spreadsheets/d/1dOjKKj23HyAQjm-y4x08gIGgUi_GdtGcDSmiZ5UBP58/edit?usp=sharing)
+#### - list of bugs in google sheets(https://docs.google.com/spreadsheets/d/1LnArXRqWuJHqxGZwMoTX1praKBvXClkbAJ8vDReDUDQ/edit?usp=sharing)
 #### - bugs in Jira 
 #### - collection with requests in Postman.
 
