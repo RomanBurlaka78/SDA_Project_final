@@ -33,8 +33,7 @@
 ### Additional:
 #### - automation tests: selenium Web driver(java) and scenarios BDD (https://demoqa.com/books)
 #### - github (https://github.com/RomanBurlaka78/Selenium_Demoqa_BDD#readme)
-### - summary end2end report (file:///C:/Disk%20D/Java-Selenium/java__selenium/Selenium_Demoqa_BDD/Test%20Results%20-%20Feature__end2end_test.html)
-
+### - summary end2end report
 ### My Skills
 ![JIRA](https://img.shields.io/badge/-JIRA-0e098c?style=for-the-badge&logo=Jira)
 ![Test Rail](https://img.shields.io/badge/-TestRail-358c09?style=for-the-badge&logo=TestRail)
