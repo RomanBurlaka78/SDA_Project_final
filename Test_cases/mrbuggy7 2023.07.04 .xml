@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Functional testing</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Logged as User(Admin, Employee, Provider)</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2</id>
+				<title>Create first admin and Log out</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>MrBuggy7</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User not logged in application. User trying to login for first time.
+
+Test data: Username: Alexa, Password 77777#
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Type username, Password from test data,  confirm password and press button Submit.</content><expected>Window is closed and appears new window with login form.</expected></step>
+<step>
+<index>2</index><content>Type username, Password from test data,  and press button Login.</content><expected>Window is closed and appears new window with Dashboard.</expected></step>
+<step>
+<index>3</index><content>Click on the button Logout</content><expected>Window is closed and appears new window with login form.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Create second admin and Log out</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references>MrBuggy7</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User not logged in application. User trying to login for first time.
+
+Test data:  
+
+Username: SecondAdmin (10 characters), 
+
+
+Password 111111111!(10 characters)
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Type username, Password from test data,  confirm password and press button Submit.</content><expected>Window is closed and appears new window with login form.</expected></step>
+<step>
+<index>2</index><content>Type username, Password from test data,  and press button Login.</content><expected>Window is closed and appears new window with Dashboard.</expected></step>
+<step>
+<index>3</index><content>Click on the button Logout</content><expected>Window is closed and appears new window with login form.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Change password for first admin</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User logged in application. Dashboard is opened.
+
+Test data: Username: Alexa, Password 77777#, email fromSDA@gmail.com,  phone 234123777, password for change - 11111!</preconds>
+										<steps_separated><step>
+<index>1</index><content>Find link on dashboard  Profile(Alexa).</content><expected>1. On right top corner showing  Link Profile with username (Alexa); </expected></step>
+<step>
+<index>2</index><content>Click on the link Profile(Alexa).</content><expected>1. Current  window is closed. 
+2. Opened window - Profile.</expected></step>
+<step>
+<index>3</index><content>Click on the button - Edit
+
+</content><expected>1. Current  window is closed. 
+2. Opened window - Update profile.</expected></step>
+<step>
+<index>4</index><content>Fill input forms email and phone number (see to test dates)</content><expected>1. Inputs forms are filled correctly.</expected></step>
+<step>
+<index>5</index><content>Type new password, confirm password. Click button Save</content><expected>1. Current  window is closed. 
+2. Opened window - Profile with new date(email, phone number).</expected></step>
+<step>
+<index>6</index><content>Click on the link Logout.</content><expected>1. Current  window is closed. 
+2. Opened window - Login.</expected></step>
+<step>
+<index>7</index><content>Fill username and password(see test date). Click button Login.</content><expected>1. Current  window is closed. 
+2. Opened window - Dashboard.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Creating new employee and login</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User logged as first admin.  Dashboard window is opened.
+Test data for first admin: Login - Alexa, Password- 77777!
+
+Test data for new employee: User Name - EmployeeFirst, First Name - EmployeeFirstName,  Last name -EmployeeFirstLastName, Email - eplFirst@wp.pl, Phone number - 739 230 950, unit- unit1, Status - active, 
+Password - 23222#</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click link Users on navigation bar.</content><expected>Current window is closed. Opened window - Users.</expected></step>
+<step>
+<index>2</index><content>At the  Window Users, click button New Employee</content><expected>Current window is closed. Opened window - Add employee.</expected></step>
+<step>
+<index>3</index><content>Fill all forms for registration New Employee. Click button save.</content><expected>Current window is closed. Opened window - Users.</expected></step>
+<step>
+<index>4</index><content>Click logout  on navigation bar.</content><expected>Current window is closed. Opened window - Login.</expected></step>
+<step>
+<index>5</index><content>Type login and password from Test date. Click button Login.
+</content><expected>Current window is closed. Opened window - Dashboard. On navigation bar showed Profile(login name).</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Creating new provider and login to provider</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User logged as first admin.  Dashboard window is opened.
+Test data: Username - Provider2, First name - ProviderNameSecond, Last name -ProviderLastNameSecond, Email - Prov2@wp.pl , Phone number: 723 399 240, provider - Provider1, Status- active,  Password - 44444$
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>At navigation bar click link - Users.</content><expected>Current window is closed. Opened new window - Users.</expected></step>
+<step>
+<index>2</index><content>Click button - New provider.</content><expected>Current window is closed. Opened new window - Add provider.</expected></step>
+<step>
+<index>3</index><content>Fill all input forms with  test dates from -Preconditions. Click button Save.</content><expected>Current window is closed. Opened new window - Users. In first row added new Provider.</expected></step>
+<step>
+<index>4</index><content>Click button Logout at navigation bar.</content><expected>Current window is closed. Opened new window - Login. </expected></step>
+<step>
+<index>5</index><content>Fill input forms Username and Password with Test dates from - preconditions. Click button Save.</content><expected>Current window is closed. Opened new window - Dashboard. At navigation bar showing -  username of provider.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Creation of new CR ,  modify dates. End CR edition – CR is moved into read only mode.</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User logged in application as employee. Dashboard is opened.
+
+Test dates for employee: Username- EmployeeFirst,  Password - 23222#
+
+
+Test dates for new CR: Number- CR1, Name - CR1_Name, Business case - BC1, Description of change - DC1,  Financial sources -FS1, Provider - Provider1
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click link CRs at dashboard. </content><expected>Current window is closed. Opened new window Cr list.</expected></step>
+<step>
+<index>2</index><content>
+Click link New CR at CR list.</content><expected>Current window is closed. Opened new window Add CR.</expected></step>
+<step>
+<index>3</index><content>Fill all input forms. Click button Save.</content><expected>Current window is closed. Opened new window CR list. In first row showed added CR.</expected></step>
+<step>
+<index>4</index><content>Click in first row button Edit.</content><expected>Current window is closed. Opened new window Edit CR.</expected></step>
+<step>
+<index>5</index><content>Change Business case, Description of change, Financial sources. Click button Save.</content><expected>Current window is closed. Opened new window CR list.</expected></step>
+<step>
+<index>6</index><content>Click in first row button Edit.</content><expected>Current window is closed. Opened new window Edit CR.
+
+
+
+
+</expected></step>
+<step>
+<index>7</index><content>Scroll  down to bottom and check checkbox End. Click button Save.</content><expected>1. Current window is closed. Opened new window  CR list.
+
+2. Status CR is changed to New.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Viewing all CRs in state Draft and: End edition of CR – CR is moved to read only mode</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Admin  logged in application. 
+
+Test data: Username: Alexa, Password 77777#</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click link CRs at navigation bar.</content><expected>Current window closed. Opened new window Cr list.</expected></step>
+<step>
+<index>2</index><content>In dropdown All status,  check - Draft.</content><expected>Showed all CRs with status - Draft.</expected></step>
+<step>
+<index>3</index><content>Click on button edit at first row.</content><expected>Current window closed. Opened new window Edit Cr.</expected></step>
+<step>
+<index>4</index><content>Scroll down and check -(checkbox)☑  End. Click button Save.</content><expected>Current window closed. Opened new window  CR list. Status CR is changed to NEW.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Viewing all CRs in state New and: Approving</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Admin  logged in application.
+
+Test data: Username: Alexa, Password 77777#
+At least 3 CRs are created. Two of them with status NEW.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click link CRs  at navigation bar.</content><expected>Current window is closed. Opened new window CR list.</expected></step>
+<step>
+<index>2</index><content>In dropdown All status, check NEW.</content><expected>All CRs with status NEW are displayed.</expected></step>
+<step>
+<index>3</index><content>Check - first CR and click button Approve.</content><expected>Status of checked CR , changed to Approved.</expected></step>
+<step>
+<index>4</index><content>In dropdown All status, check Approved.</content><expected>Displayed only CRs with statuses Approved.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Viewing all CRs in state Clarified and:  Approving response</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Adding public and private comments to all visible CRs</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Viewing all CRs in state To clarify and: o After adding mandatory public comment process it into state Clarified or Rejected</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>CR browsing – Admin can view all CRs in all states</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Admin(user) logged in application. 
+
+Test data: Username: Alexa, Password 77777#</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on link CRs at navigation bar.</content><expected>Current window is  close. Opened new window - Cr list.</expected></step>
+<step>
+<index>2</index><content>Choose - All providers and  - All status in dropdown forms.</content><expected>Displayed lists of all CRs in all status.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Negative test cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C13</id>
+				<title>Not  allowed  to create first admin with test dates different from applying</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>MrBuggy7</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User don&apos;t logged in application.
+
+
+Test dates:(only for information)
+
+
+The username must contain a minimum of 5 characters and a maximum of 20 characters.
+
+The password must have at least one special character (!@#$%?.) and number and must contain a minimum of 6 characters and a maximum of 20 characters.
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Type Username - 4 letters(should be different from test date) and click Save </content><expected>1. Input form has red border and showed text:   The field must contain from 5 to 20 characters.</expected></step>
+<step>
+<index>2</index><content>Type Username - 21 letters and click Save</content><expected>Input form not allowing type greater then 20 letters.</expected></step>
+<step>
+<index>3</index><content>Type Password - 5 numbers and click Save.</content><expected>1. Input form has red border and showed text:   The field must contain from 5 to 20 characters.</expected></step>
+<step>
+<index>4</index><content>Type Password - 7 numbers and click Save.</content><expected>1. Input form has red border and showed text:   The password must have at least one special character (!@#$%?.) and number.</expected></step>
+<step>
+<index>5</index><content>Type Password - 21 numbers and click Save</content><expected>Input form not allowing type greater then 20 letters.</expected></step>
+<step>
+<index>6</index><content>Type Password - 5 numbers, one space and  one character(!@#$%?.). Click Save.
+Password : 11111 #</content><expected>1. Input form has red border and showed text:   The password must have at least one special character (!@#$%?.) and number. Not allowed saving spaces.</expected></step>
+<step>
+<index>7</index><content>Repeat  Password in form - Confirm password(add else one character)  and click Save.</content><expected>1. Input form has red border and showed text:   The password must have at least one special character (!@#$%?.) and number. Not allowed typing spaces in password.</expected></step>
+<step>
+<index>8</index><content>Remove all date from all input forms and click Save.</content><expected>1. Input forms in all forms are have red border and showed text:  This field is required.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Change password - negative test cases</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Creating new employee with empty input forms</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Creating new provider  with empty input forms</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+			<section>
+		<name>Api testing</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C18</id>
+				<title>[User] Get- users list</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running user logged as first user.
+2. Postman is opened.
+
+
+Test data for Postman:
+
+
+Method: GET
+URL: http://localhost:8080/user
+
+Headers:
+ Accept - application.json
+ Authorization QWxleGE=:Nzc3Nzch(  in Base64  -  Alexa  77777!)
+Content-Type application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+
+
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>Create new collection MrBuggy7_Testing_API and add folder User.</content><expected>Collection and folder are created.</expected></step>
+<step>
+<index>2</index><content>In folder User create request: get  &amp;ndash; users list.
+
+
+Fill URL , Headers from Test data.
+
+
+Click Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>3</index><content>Click button send.</content><expected>Body has response  Status: 200 OK and 
+
+{&quot;Data&quot;:[{&quot;Id&quot;:1,&quot;Role&quot;:&quot;Admin&quot;,&quot;Status&quot;:&quot;Active&quot;,&quot;Username&quot;:&quot;Alexa&quot;,&quot;FirstName&quot;:&quot;First&quot;,&quot;LastName&quot;:&quot;Admin&quot;}],&quot;Success&quot;:true}
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>[User] Get- user ID</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running user logged as first user.
+2. Postman is opened.
+
+
+Test data for Postman:
+
+
+Method: GET
+URL: http://localhost:8080/user/1
+
+Headers:
+ Accept - application.json
+ Authorization QWxleGE=:Nzc3Nzch(  in Base64  -  Alexa  77777!)
+Content-Type application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+
+
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>In folder User create request: get  &amp;ndash; users ID.
+
+
+Fill URL , Headers from Test data.
+
+
+Click Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>2</index><content>Click button send.</content><expected>Body has response  Status: 200 OK and 
+
+{&quot;Data&quot;:[{&quot;Id&quot;:1,&quot;Role&quot;:&quot;Admin&quot;,&quot;Status&quot;:&quot;Active&quot;,&quot;Username&quot;:&quot;Alexa&quot;,&quot;FirstName&quot;:&quot;First&quot;,&quot;LastName&quot;:&quot;Admin&quot;}],&quot;Success&quot;:true}
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>[User] Get- user profile</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+Test data:
+
+Method: GET
+URL: http://localhost:8080/user/Alexa
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder User create request: Get_User_Profile</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>5</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C75</id>
+				<title>[User] Post_User_new_Admin</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: POST
+URL: http://localhost:8080/user/admin
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+Body test data:
+username: RomanNew
+first_name:SecondUserq
+user_name:SecUser
+last_name:Burlaka
+email:qwery@wp.pl
+phone_number:722342043
+password:11111!
+unit_id:2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder User create request: Post_User_new_Admin, and choose POST request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Fill body in pairs key(Key, value): data from test data.
+
+
+</content><expected>Pairs are showed in rows.</expected></step>
+<step>
+<index>5</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>6</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C76</id>
+				<title>[User] Post_User_new_Employee</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: POST
+URL: http://localhost:8080/user/employee
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+Body test data:
+first_name:FirstEmployee
+user_name:FirstEmpl
+last_name:Chudy
+email:chudy@wp.pl
+phone_number:7200322048
+password:22222@
+unit_id:1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder User create request: Post_User_new_Employee, and choose POST request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Fill body in pairs key(Key, value): data from test data.
+
+
+</content><expected>Pairs are showed in rows.</expected></step>
+<step>
+<index>5</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>6</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C77</id>
+				<title>[User] Post_User_new_Provider</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: POST
+URL: http://localhost:8080/user/employee
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+Body test data:
+first_name:FirsrProvider
+user_name:Provider1
+last_name:Gruby-Provider
+email:gruby@wp.pl
+phone_number:7200322033
+password:12421#
+unit_id:1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder User create request: Post_User_new_Provider, and choose POST request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Fill body in pairs key(Key, value): data from test data.
+
+
+</content><expected>Pairs are showed in rows.</expected></step>
+<step>
+<index>5</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>6</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C78</id>
+				<title>[User] Put_User</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: PUT
+URL: http://localhost:8080/user/1
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+Body test data:
+first_name:Alexa
+username:Alexa
+last_name:Burlaka-Lastname
+email:qwerySD@wp.pl
+phone_number:722342043
+password:77777!
+unit_id:2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder User create request: Put_User, and choose PUT request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Fill body in pairs key(Key, value): data from test data.
+
+
+</content><expected>Pairs are showed in rows.</expected></step>
+<step>
+<index>5</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>6</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C79</id>
+				<title>[User] Delete_User</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: DELETE
+URL: http://localhost:8080/user/2
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder User create request: Delete_User, and choose Delete request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>5</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C80</id>
+				<title>[User] Delete_User_with_notSavedID</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: DELETE
+URL: http://localhost:8080/user/2
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder User create request: Delete_User, and choose Delete request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>5</index><content>Click button Send.</content><expected>Body has response  : 404 Not Found.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C81</id>
+				<title>[Unit] Get- Unit_list</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running user logged as first user.
+2. Postman is opened.
+
+
+Test data for Postman:
+
+
+Method: GET
+URL: http://localhost:8080/unit
+
+Headers:
+ Accept - application.json
+ Authorization QWxleGE=:Nzc3Nzch(  in Base64  -  Alexa  77777!)
+Content-Type application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+
+
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>Add folder Unit to current collection.</content><expected>Folder is added.</expected></step>
+<step>
+<index>2</index><content>In folder Unit create request: Get_Unit_list, fill URL , headers from Test data.
+
+Click Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>3</index><content>Click button send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C82</id>
+				<title>[Unit] Get- Unit_ID</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running user logged as first user.
+2. Postman is opened.
+
+
+Test data for Postman:
+
+
+Method: GET
+URL: http://localhost:8080/unit
+
+Headers:
+ Accept - application.json
+ Authorization QWxleGE=:Nzc3Nzch(  in Base64  -  Alexa  77777!)
+Content-Type application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+
+
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>In folder Unit create request: Get_Unit_ID, fill URL , headers from Test data.
+
+Click Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>2</index><content>Click button send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C83</id>
+				<title>[Unit] Post_Unit_new_unit</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: POST
+URL: http://localhost:8080/unit
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+Body test data:
+name: UnitName
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder Unit create request: Post_Unit_new_unit, and choose POST request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Fill body in pairs key(Key, value): data from test data.
+
+
+</content><expected>Pairs are showed in rows.</expected></step>
+<step>
+<index>5</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>6</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C84</id>
+				<title>[Unit] Put_Unit_new_name</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: PUT
+URL: http://localhost:8080/unit/1
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+Body test data:
+name: UnitNewName2
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder Unit create request: Put_Unit, and choose PUT request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Fill body in pairs key(Key, value): data from test data.
+
+
+</content><expected>Pairs are showed in rows.</expected></step>
+<step>
+<index>5</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>6</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C85</id>
+				<title>[Unit] Delete_Unit</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: DELETE
+URL: http://localhost:8080/unit/1
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder Unit create request: Delete_Unit, and choose Delete request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>5</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C86</id>
+				<title>[Unit] Delete_Unit_with _notSavedID</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: DELETE
+URL: http://localhost:8080/unit/6
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder Unit create request: Delete_Unit, and choose Delete request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>5</index><content>Click button Send.</content><expected>Body has response  Status: 404 Not Found.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C87</id>
+				<title>[Provider] Get- Provider_list</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running user logged as first user.
+2. Postman is opened.
+
+
+Test data for Postman:
+
+
+Method: GET
+URL: http://localhost:8080/provider
+
+Headers:
+ Accept - application.json
+ Authorization QWxleGE=:Nzc3Nzch(  in Base64  -  Alexa  77777!)
+ Content-Type application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+
+
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>Add folder Provider to current collection.</content><expected>Folder is added.</expected></step>
+<step>
+<index>2</index><content>In folder Provider create request: Get_Provider_list, fill URL , headers from Test data.
+
+Click Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>3</index><content>Click button send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C88</id>
+				<title>[Provider] Get- Provider_ID</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running user logged as first user.
+2. Postman is opened.
+
+
+Test data for Postman:
+
+
+Method: GET
+URL: http://localhost:8080/provider/1
+
+Headers:
+ Accept - application.json
+ Authorization QWxleGE=:Nzc3Nzch(  in Base64  -  Alexa : 77777!)
+Content-Type application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+
+
+ </preconds>
+										<steps_separated><step>
+<index>1</index><content>In folder Unit create request: Get_Provider_ID, fill URL , headers from Test data.
+
+Click Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>2</index><content>Click button send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C89</id>
+				<title>[Provider] Post_Provider_new_provider</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: POST
+URL: http://localhost:8080/provider
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa :  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+Body test data:
+name: ProviderName
+price: 100
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder Provider create request: Post_Provider_new_provider, and choose POST request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Fill body in pairs key(Key, value): data from test data.
+
+
+</content><expected>Pairs are showed in rows.</expected></step>
+<step>
+<index>5</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>6</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C90</id>
+				<title>[Provider] Put_Provider</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: PUT
+URL: http://localhost:8080/provider/2
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+Body test data:
+name: providerNewName2
+price: 200
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder Provider create request: Put_Provider, and choose PUT request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Fill body in pairs key(Key, value): data from test data.
+
+
+</content><expected>Pairs are showed in rows.</expected></step>
+<step>
+<index>5</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>6</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C91</id>
+				<title>[Provider] Delete_Provider</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. MrBuggy7- application is running 
+user logged as first user.
+2. Postman is opened.
+
+
+Test data:
+
+Method: DELETE
+URL: http://localhost:8080/provider/2
+
+Headers:
+ Accept - application.json
+ Authorization 
+QWxleGE=:Nzc3Nzch
+(  in Base64  -  Alexa  77777!)
+Content-Type 
+application/x-www-form-urlencoded 
+
+
+
+
+
+
+
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content> In folder Provider create request: Delete_Provider, and choose Delete request.</content><expected> Request created.</expected></step>
+<step>
+<index>2</index><content>Fill URL  from Test data.</content><expected>Url is showing in  input form.</expected></step>
+<step>
+<index>3</index><content> Fill Headers from Test data.</content><expected>Test data are showing  in pairs(key, value).</expected></step>
+<step>
+<index>4</index><content>Click button Save.</content><expected>Data are saving in request.</expected></step>
+<step>
+<index>5</index><content>Click button Send.</content><expected>Body has response  Status: 200 OK.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
