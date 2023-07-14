@@ -13,7 +13,7 @@
 ### Results:
 #### - test plan (https://docs.google.com/spreadsheets/d/1gHLpGdckxEEoNOkktPC62YFnY14RTzOetkHMWo-2M7A/edit?usp=sharing)
 #### - testcases in TestRail
-#### - summary test report(TestRail)
+#### - summary test report(TestRail - https://drive.google.com/file/d/1-JcHw5H45T9Jic1XHpRtArojSm7VAxww/view?usp=sharing )
 #### - list of testcases in google sheets (https://docs.google.com/spreadsheets/d/107qkuqqB4tE09mclHUjWKc572MCsWVWx9CjnkjlSGY4/edit?usp=sharing)
 #### - card of exploration testing (https://docs.google.com/spreadsheets/d/1dOjKKj23HyAQjm-y4x08gIGgUi_GdtGcDSmiZ5UBP58/edit?usp=sharing)
 #### - list of bugs in google sheets(https://docs.google.com/spreadsheets/d/1LnArXRqWuJHqxGZwMoTX1praKBvXClkbAJ8vDReDUDQ/edit?usp=sharing)
@@ -33,7 +33,7 @@
 ### Additional:
 #### - automation tests: selenium Web driver(java) and scenarios BDD (https://demoqa.com/books)
 #### - github (https://github.com/RomanBurlaka78/Selenium_Demoqa_BDD#readme)
-### - summary end2end report
+### - summary end2end report (IJ project)
 ### My Skills
 ![JIRA](https://img.shields.io/badge/-JIRA-0e098c?style=for-the-badge&logo=Jira)
 ![Test Rail](https://img.shields.io/badge/-TestRail-358c09?style=for-the-badge&logo=TestRail)
